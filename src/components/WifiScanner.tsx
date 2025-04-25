@@ -70,8 +70,8 @@ const WifiScanner = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-6">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen bg-gray-900 text-white p-6 flex flex-col">
+      <div className="max-w-4xl mx-auto flex-grow">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-3xl font-bold">WiFi Boost Manager</h1>
           <Sheet>
@@ -154,6 +154,10 @@ const WifiScanner = () => {
           </div>
         </div>
       </div>
+      
+      <footer className="mt-8 text-center text-gray-400 text-sm py-4 border-t border-gray-700">
+        Created by Bruno Matutu © {new Date().getFullYear()} | Wireless Boost Wizard
+      </footer>
     </div>
   );
 };
